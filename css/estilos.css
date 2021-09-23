@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.container {
+    width: 980px;
+    margin:auto;
+    /* background-color: burlywood; */
+}
+.container-header {
+    display: grid;
+}
+.header__filasuperior {
+    background-color: blueviolet;
+    display: grid;
+    padding: 5px;
+}
+.header__filasuperior--iconos {
+    font-size: 25px;
+    display: flex;
+    justify-self: end;
+}
+.header__filasuperior--iconos a {
+    color: #efe1fb;
+
+    margin: 0 7px;
+}
+.header__filasuperior--iconos a:hover {
+    color: white;
+    text-shadow: 0px 0px 4px white;
+}
+nav {
+
+}
+.container-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nav-contenedor-logo img {
+    width: 150px;
+}
+.nav-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link a {
+    color: #7e26d0;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-link a:hover {
+    text-decoration: underline;
+}
+main{
+
+}
+.main__destacado {
+    background-color: #f1ecf5;
+    padding: 20px;
+}
+.container-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container-main-col1 img {
+    width: 100%;
+}
+.container-main-col2 {
+    padding: 50px;
+}
+.container-main-col2 .leer-mas,
+.contenedor-articulos .leer-mas {
+    background-color: #5c2d91;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 15px 0;
+    text-decoration: none;
+}
+.container-main-col2 .leer-mas:hover,
+.contenedor-articulos .leer-mas:hover {
+    background-color: blueviolet;
+}
+
+.main__articulos {
+    padding: 20px;
+}
+.container-general-articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-column-gap: 20px;
+    grid-row-gap: 25px ;
+}
+
+.contenedor-articulos {
+
+}
+.contenedor-articulos img {
+    width: 100%;
+}
+.contenedor-articulos .fecha {
+    color: #998aa7;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: -15px;
+}
+.contenedor-articulos .leer-mas {
+    font-size: 0.75em;
+}
+
+.main__cta {
+    background-color: #8a2be2;
+    background-image: linear-gradient(90deg, rgb(2 0 36 / 77%) 0%, rgb(94 24 159 / 76%) 35%, rgb(132 77 181 / 85%) 100%), url(/cla-3/img/programmers.jpg);
+    padding: 70px;
+    background-size: cover;
+    background-position: center;
+    margin-top:20px
+}
+.container-cta {
+    color: white;
+}
+.container-cta h2 {
+    font-size: 2em;
+    color: #ffffffe0;
+    margin: 0;
+}
+.container-cta h1 {
+    font-size: 3.5em;
+    margin: 0 0 30px;
+}
+.container-cta a {
+    color:white;
+    background-color: #E28A2B;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.container-cta a:hover {
+    background-color: #efa223;
+}
+
+footer {
+    color: white;
+}
+.footer__fila1 {
+    background-color: #8969b1;
+    text-align: center;
+    padding: 15px;
+}
+.footer__fila2 {
+    background-color: #3a1a63;
+    padding: 35px;
+}
+.footer__fila2--creditos {
+    display: flex;
+    align-items: center;
+}
+.container-fila2 {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
