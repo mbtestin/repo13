@@ -65,6 +65,10 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.container-main-col1 {
+    display: inline-grid;
+    align-items: center;
+}
 .container-main-col1 img {
     width: 100%;
 }
@@ -159,4 +163,67 @@ footer {
 .container-fila2 {
     display: grid;
     grid-template-columns: 8fr 4fr;
+}
+
+/* ********************************* */
+/* INICIO CÓDIGO RESPONSIVE */
+
+@media (max-width:1060px) {
+    .container {
+        width: auto;
+    }
+    .nav-link {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    .container-main {
+        grid-template-columns: 1fr 2fr;
+    }
+    .container-main-col2 {
+        padding: 0 30px;
+    }
+    .container-general-articulos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:600px) {
+    .container-main {
+        grid-template-columns: 1fr;
+    }
+    .nav-link {
+        text-align: right;
+    }
+    .container-main-col2 {
+        padding: 0;
+    }
+    .container-general-articulos {
+        grid-template-columns: 1fr;
+    }
+    .container-cta {
+        display: grid;
+    }
+    .container-cta a {
+        justify-self: center;
+    }
+    .main__cta {
+        padding: 40px 20px;
+        font-size: 0.7em;
+    }
+    .main__cta a {
+        font-size: 1.6em;
+    }
+    .container-fila2 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .footer__fila2--creditos,
+    footer .header__filasuperior--iconos {
+        display: flex;
+        justify-self: center;
+        text-align: center;
+
+    }
 }
